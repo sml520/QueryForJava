@@ -1,7 +1,19 @@
 package com.zhangyuanliang.query;
 
 /**
- * Created by 张元亮 on 2020/9/16.
+ * @author 张元亮
+ * @date 2020/9/16
  */
 public class Limit {
+
+    private Integer limit;
+
+    public Limit(Integer limit) {
+        this.limit = limit;
+    }
+
+    public Integer getLimit() {
+        return limit;
+    }
+
 }

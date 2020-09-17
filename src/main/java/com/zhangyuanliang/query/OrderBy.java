@@ -1,7 +1,14 @@
 package com.zhangyuanliang.query;
 
+
+import java.util.Comparator;
+
 /**
- * Created by 张元亮 on 2020/9/16.
+ * @author 张元亮
+ * @date 2020/9/16
  */
-public class OrderBy {
+public interface OrderBy<T> {
+
+    Comparator<T> getComparing();
+
 }

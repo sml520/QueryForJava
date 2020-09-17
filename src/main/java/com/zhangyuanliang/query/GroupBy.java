@@ -1,7 +1,14 @@
 package com.zhangyuanliang.query;
 
+
+import java.util.Map;
+import java.util.stream.Collector;
+
 /**
- * Created by 张元亮 on 2020/9/16.
+ * @author 张元亮
+ * @date 2020/9/16
  */
-public class GroupBy {
+public interface GroupBy<T, K, D> {
+
+    Collector<User, ?, Map<K, D>> getCollector();
 }

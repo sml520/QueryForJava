@@ -1,0 +1,10 @@
+.settings/
+.idea/
+target
+*.project
+*.classpath
+*.iml
+*.log*
+*.versionsBackup
+.metadata/
+*.lck

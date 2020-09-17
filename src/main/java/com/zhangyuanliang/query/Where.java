@@ -1,7 +1,22 @@
 package com.zhangyuanliang.query;
 
+import java.util.Map;
+import java.util.function.Predicate;
+
 /**
- * Created by 张元亮 on 2020/9/16.
+ * @author 张元亮
+ * @date 2020/9/16
  */
-public class Where {
+public interface Where<T> {
+
+    /**
+     * 获取查询参数
+     *
+     * @param
+     * @return
+     */
+    Predicate<T> getPredicate();
+
+
+    void setParam(Map<String, Object> param);
 }
